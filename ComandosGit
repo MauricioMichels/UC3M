@@ -1,0 +1,14 @@
+Comandos de Git:
+
+git clone <URL>
+
+git pull origin hector
+
+git status
+
+git add .
+
+git commit -m "MENSAGE"
+
+git push origin hector
+
