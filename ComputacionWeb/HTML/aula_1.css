@@ -1,0 +1,17 @@
+form{
+	margin: 10px;
+	padding: 10px;
+	background-color: #e6e6e6;
+}
+
+input:hover {
+	background-color: #aaaaaa;
+	border: 2px solid gray;
+	color: white;
+
+
+}
+
+input:hover::-webkit-input-placeholder {
+    color: white;
+}
