@@ -12,3 +12,5 @@ git commit -m "MENSAGE"
 
 git push origin hector
 
+git emerge master
+
