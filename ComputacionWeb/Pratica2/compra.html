@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Resumen de la compra</title>
+		<link rel="stylesheet" href="css/compra.css" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/accesorios.js" type="text/javascript"></script>
+		<script src="js/compra.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Resumen de la compra</h1>
+
+		<table id="compra">
+			<thead>
+				<tr>
+					<td>Producto</td>
+					<td>Unidades</td>
+					<td>Precio</td>
+				</tr>
+			</thead>
+			<tbody id="ProductosSelected">
+				<tr>
+					<td>Bicicleta de montaña 28 v. talla L</td>
+					<td>1</td>
+					<td>400.00</td>
+				</tr>
+				<tr id="total">
+					<td>Total:</td>
+					<td></td>
+					<td id="totalval">400.00</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Accesorios opcionales</h2>
+		<form>
+			<select id="accesorios">
+<!-- 				<option value="rf1x1">Botellín de agua 0,5L (4.00€)</option>
+				<option value="rf1x2">Botellín de agua 0,9L (5.00€)</option> -->
+			</select>
+			<input id="cantidad" type="number" value="1" min="1" max="99">
+			<input id="boton" type="button" value="Comprar" onclick="addProduct()">
+		</form>
+	</body>
+</html>
