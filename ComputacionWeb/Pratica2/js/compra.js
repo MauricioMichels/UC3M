@@ -22,13 +22,13 @@ var addProduct = function(argument) {
 
 function createRow(accesorio, cantidad) {
     var table = document.getElementById('compra');
-    var row = table.insertRow(0);
+    var row = table.insertRow(1);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
-    var cell2 = row.insertCell(2);
+    var cell3 = row.insertCell(2);
     cell1.innerHTML = accesorio.etiqueta;
     cell2.innerHTML = cantidad;
-    cell2.innerHTML = accesorio.precio;
+    cell3.innerHTML = accesorio.precio;
 }
 
 function deleteRow() {
