@@ -1,11 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<!-- <script src="http://code.jquery.com/jquery-2.1.0.js"></script> -->
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script> -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<title>Sign Up</title>
 	</head>
 	<body>
@@ -16,31 +21,23 @@
 				</div>  
 				<div class="panel-body">
 
-					<form>
+					<form method="post" action="addUser">
 
 					  	<div class="input-group">
 						  <span class="input-group-addon glyphicon glyphicon-pencil" id="basic-addon1"></span>
-						  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+						  <input name="username" type="text" required class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 					  	</div>
 					  	<br>
 					  	<div class="input-group">
 						  <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
-						  <input type="text" class="form-control" placeholder="e-mail" aria-describedby="basic-addon1">
+						  <input name="email" type="email" required class="form-control" placeholder="e-mail" aria-describedby="basic-addon1">
 						</div>
 						<br>
 						<div class="input-group">
 						  <span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1"></span>
-					    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					    	<input name="password" type="password" required class="form-control" id="exampleInputPassword1" placeholder="Password">
 						</div>
 						<br>
-						<div class="input-group">
-						  <span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1"></span>
-					    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat Password">
-						</div>
-						<br>
-
-
-					
 					  <div class="form-group text-center">
 						<button type="submit" class="btn btn-primary col-md-12">Sign Up
 						</button>
